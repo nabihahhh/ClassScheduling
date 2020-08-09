@@ -89,8 +89,10 @@ The averages are definitely lower than if the first input is used, however it st
 
 # Conclusion
 
-From the analysis, it is shown that **Shortest Job First (SJF)** algorithm is the best non-preemptive algorithm to implement class scheduling.  
-It is the most efficient algorithm time-wise, based on the constraints given. Arrival time is neglected as it will only be considered in preemptive scheduling algorithms, as mentioned.  
+From the analysis, it is shown that **Shortest Job First (SJF)** algorithm is the best non-preemptive algorithm to implement class scheduling.
+
+It is the most efficient algorithm time-wise, based on the constraints given. Arrival time is neglected as it will only be considered in preemptive scheduling algorithms, as mentioned.
+
 However, it is important to note again that the durations for the classes must be known beforehand, so that the algorithm can be used.  
 
 # Group Members
