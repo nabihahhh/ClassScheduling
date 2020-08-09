@@ -5,17 +5,19 @@ In this context, choosing the right solution to schedule the classes is essentia
 
 The chosen algorithms are:
 
-**First Come First Serve (FCFS) Scheduling**
+1. **First Come First Serve (FCFS) Scheduling**
 
-This algorithm executes processes based on which process comes first in the queue.
+	This algorithm executes processes based on which process comes first in the queue.
 
-**Shortest Job First (SJF) Scheduling**
 
-This algorithm executes processes based on which process in the queue has a shorter burst time. In this case, the duration of the class.
+2. **Shortest Job First (SJF) Scheduling**
 
-**Priority Scheduling**
+	This algorithm executes processes based on which process in the queue has a shorter burst time. In this case, the duration of the class.
 
-This algorithm executes processes based on which process in the queue has a higher priority (lower integer = higher priority).
+
+3. **Priority Scheduling**
+
+	This algorithm executes processes based on which process in the queue has a higher priority (lower integer = higher priority).
 
 # Consideration
 
@@ -28,15 +30,15 @@ For this analysis, we considered a few scenarios that would provide more clarity
 Hence, the input is as follows:
 (Course code - Duration - Priority - Arrival time)
 
-* CSC 2201  - 3 - 2 - 1
-* CSC 2706  - 2 - 2 - 4
+* CSC 2201 &nbsp;- 3 - 2 - 1
+* CSC 2706 &nbsp;- 2 - 2 - 4
 * INFO 2302 - 3 - 2 - 5
-* CSC 4905  - 9 - 4 - 1
-* CSC 1401  - 2 - 1 - 4
-* CSC 1100  - 1 - 1 - 3
+* CSC 4905 &nbsp;- 9 - 4 - 1
+* CSC 1401 &nbsp;- 2 - 1 - 4
+* CSC 1100 &nbsp;- 1 - 1 - 3
 * INFO 3401 - 2 - 3 - 3
-* CSC 3401  - 2 - 3 - 2
-* CSC 1103  - 1 - 1 - 3
+* CSC 3401 &nbsp;- 2 - 3 - 2
+* CSC 1103 &nbsp;- 1 - 1 - 3
 * INFO 4993 - 4 - 4 - 6
 
 *Do note that the arrival time for the classes are neglected, as the algorithms chosen are non-preemptive.*
