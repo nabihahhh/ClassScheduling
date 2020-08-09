@@ -49,10 +49,11 @@ Hence, the input is as follows:
 
 For FCFS scheduling, the data is as follows:
 
-Average waiting time = 14.3  
-Average turnaround time = 17.2
+**Average waiting time = 14.3**  
+**Average turnaround time = 17.2**
 
-From the averages provided, FCFS is the least efficient algorithm as some processes had to wait a long time to execute, despite having shorter duration than others.  
+From the averages provided, FCFS is the least efficient algorithm as some processes had to wait a long time to execute, despite having shorter duration than others.
+
 It only executes processes according to their order in the queue, hence if longer classes come earlier in the queue, it will be time consuming.  
 Hence, it is why FCFS is slower than SJF and Priority Scheduling.
 
@@ -60,27 +61,29 @@ Hence, it is why FCFS is slower than SJF and Priority Scheduling.
 
 For SJF scheduling, the data is as follows:
 
-Average waiting time = 8  
-Average turnaround time = 10.9
+**Average waiting time = 8**  
+**Average turnaround time = 10.9**
 
-From the averages provided, SJF is the most efficient algorithm as the waiting times for the processes are the shortest overall, compared to FCFS and Priority Scheduling.  
+From the averages provided, SJF is the most efficient algorithm as the waiting times for the processes are the shortest overall, compared to FCFS and Priority Scheduling.
+
 It executes processes according to their duration, hence it is the most efficient. However, the duration of each classes must be known prior for this algorithm to be usable.
 
 ## Priority Scheduling
 
 For priority scheduling, the data is as follows:
 
-Average waiting time = 9.2  
-Average turnaround time = 12.1
+**Average waiting time = 9.2**  
+**Average turnaround time = 12.1**
 
 From the averages provided, Priority Scheduling is faster than FCFS, albeit slower than SJF.  
-It executes processes according to their priorities, hence providing advantages for classes that are more important.  
+It executes processes according to their priorities, hence providing advantages for classes that are more important.
+
 However, for classes having the same priority, the algorithm only executes them according to which classes come first, hence it will be less efficient if classes with longer durations come first.
 
 If the input is sorted such that the classes with shorter durations come first, this is how the averages would look like:
 
-Average waiting time = 8.4  
-Average turnaround time = 11.3
+**Average waiting time = 8.4**  
+**Average turnaround time = 11.3**
 
 The averages are definitely lower than if the first input is used, however it still takes longer to execute as compared to SJF.
 
