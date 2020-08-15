@@ -49,6 +49,19 @@ Hence, the input is as follows:
 
 For FCFS scheduling, the data is as follows:
 
+|  Course Code  |   Duration    |  Waiting time  | Turnaround time |
+| :---: | :---: | :---: | :---: |
+| CSC 2201 | 3 | 0 | 3 |
+| CSC 2706 | 2 | 3 | 5 |
+| INFO 2302 | 3 | 5 | 8 |
+| CSC 4905 | 9 | 8 | 17 |
+| CSC 1401 | 2 | 17 | 19 |
+| CSC 1100 | 1 | 19 | 20 |
+| INFO 3401 | 2 | 20 | 22 |
+| CSC 3401 | 2 | 22 | 24 |
+| CSC 1103 | 1 | 24 | 25 |
+| INFO 4993 | 4 | 25 | 29 |
+
 **Average waiting time = 14.3**  
 **Average turnaround time = 17.2**
 
@@ -61,17 +74,18 @@ Hence, it is why FCFS is slower than SJF and Priority Scheduling.
 
 For SJF scheduling, the data is as follows:
 
-**Course Code   Duration   Waiting time   Turnaround time**
-   CSC 2201        3            0               3
-   CSC 2706        2            3               5
-   INFO 2302       3            5               8
-   CSC 4905        9            8               17
-   CSC 1401        2            17              19
-   CSC 1100        1            19              20
-   INFO 3401       2            20              22
-   CSC 3401        2            22              24
-   CSC 1103        1            24              25
-   INFO 4993       4            25              29
+|  Course Code  |   Duration    |  Waiting time  | Turnaround time |
+| :---: | :---: | :---: | :---: |
+| CSC 1100 | 1 | 0 | 1 |
+| CSC 1103 | 1 | 1 | 2 |
+| CSC 2706 | 2 | 2 | 4 |
+| CSC 1401 | 2 | 4 | 6 |
+| INFO 3401 | 2 | 6 | 8 |
+| CSC 3401 | 2 | 8 | 10 |
+| CSC 2201 | 3 | 10 | 13 |
+| INFO 2302 | 3 | 13 | 16 |
+| INFO 4993 | 4 | 16 | 20 |
+| CSC 4905 | 9 | 29 | 29 |
 
 **Average waiting time = 8**  
 **Average turnaround time = 10.9**
@@ -84,18 +98,18 @@ It executes processes according to their duration, hence it is the most efficien
 
 For priority scheduling, the data is as follows:
 
-**Course Code   Priority   Duration   Waiting time   Turnaround time**
-   CSC 1401        1          2            0               2
-   CSC 1100        1          1            2               3
-   CSC 1103        1          1            3               4
-   CSC 2201        2          3            4               7
-   CSC 2706        2          2            7               9
-   INFO 2302       2          3            9               12
-   INFO 3401       3          2            12              14
-   CSC 3401        3          2            14              16
-   CSC 4905        4          9            16              25
-   INFO 4993       4          4            25              29
-
+|  Course Code  |   Priority    |   Duration    |  Waiting time  | Turnaround time |
+| :---: | :---: | :---: | :---: | :---: |
+| CSC 1401 | 1 | 2 | 0 | 2 |
+| CSC 1100 | 1 | 1 | 2 | 3 |
+| CSC 1103 | 1 | 1 | 3 | 4 |
+| CSC 2201 | 2 | 3 | 4 | 7 |
+| CSC 2706 | 2 | 2 | 7 | 9 |
+| INFO 2302 | 2 | 3 | 9 | 12 |
+| INFO 3401 | 3 | 2 | 12 | 14 |
+| CSC 3401 | 3 | 2 | 14 | 16 |
+| CSC 4905 | 4 | 9 | 16 | 25 |
+| INFO 4993 | 4 | 4 | 25 | 29 |
 
 **Average waiting time = 9.2**  
 **Average turnaround time = 12.1**
@@ -105,19 +119,7 @@ It executes processes according to their priorities, hence providing advantages 
 
 However, for classes having the same priority, the algorithm only executes them according to which classes come first, hence it will be less efficient if classes with longer durations come first.
 
-If the input is sorted such that the classes with shorter durations come first, this is how the order of courses and averages would look like:
-
-**Course Code   Duration   Waiting time   Turnaround time**
-   CSC 1100        1            0               1
-   CSC 1103        1            1               2
-   CSC 2706        2            2               4
-   CSC 1401        2            4               6
-   INFO 3401       2            6               8
-   CSC 3401        2            8               10
-   CSC 2201        3            10              13
-   INFO 2302       3            13              16
-   INFO 4993       4            16              20
-   CSC 4905        9            20              29
+If the input is sorted such that the classes with shorter durations come first, this is how the averages would look like:
 
 **Average waiting time = 8.4**  
 **Average turnaround time = 11.3**
