@@ -28,18 +28,19 @@ For this analysis, we considered a few scenarios that would provide more clarity
 * As for priority scheduling, we considered classes that have the same priority.
 
 Hence, the input is as follows:  
-(Course code - Duration - Priority - Arrival time)
 
-* CSC 2201 &nbsp;&nbsp;- 3 - 2 - 1
-* CSC 2706 &nbsp;&nbsp;- 2 - 2 - 4
-* INFO 2302 - 3 - 2 - 5
-* CSC 4905 &nbsp;&nbsp;- 9 - 4 - 1
-* CSC 1401 &nbsp;&nbsp;- 2 - 1 - 4
-* CSC 1100 &nbsp;&nbsp;- 1 - 1 - 3
-* INFO 3401 - 2 - 3 - 3
-* CSC 3401 &nbsp;&nbsp;- 2 - 3 - 2
-* CSC 1103 &nbsp;&nbsp;- 1 - 1 - 3
-* INFO 4993 - 4 - 4 - 6
+|  Course Code  |   Duration    |  Priority  | Arrival time |
+| :---: | :---: | :---: | :---: |
+| CSC 2201 | 3 | 2 | 1 |
+| CSC 2706 | 2 | 2 | 4 |
+| INFO 2302 | 3 | 2 | 5 |
+| CSC 4905 | 9 | 4 | 1 |
+| CSC 1401 | 2 | 1 | 4 |
+| CSC 1100 | 1 | 1 | 3 |
+| INFO 3401 | 2 | 3 | 3 |
+| CSC 3401 | 2 | 3 | 2 |
+| CSC 1103 | 1 | 1 | 3 |
+| INFO 4993 | 4 | 4 | 6 |
 
 *Do note that the arrival time for the classes are neglected, as the algorithms chosen are non-preemptive.*
 
